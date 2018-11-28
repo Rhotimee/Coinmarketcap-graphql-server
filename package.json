@@ -1,0 +1,26 @@
+{
+  "name": "graphql-coinmarketcap",
+  "version": "1.0.0",
+  "description": "Simple GraphQL Server for CoinMarketCap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "keywords": [
+    "graphql, coinmarketcap, crypto"
+  ],
+  "author": "Yemitan Isaiah Olurotimi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2"
+  }
+}
