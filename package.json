@@ -4,8 +4,10 @@
   "description": "Simple GraphQL Server for CoinMarketCap",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon --exec babel-node index.js"
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --exec babel-node index.js",
+    "build": "babel . -d ./dist --ignore node_modules",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "graphql, coinmarketcap, crypto"
